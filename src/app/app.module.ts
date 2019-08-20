@@ -5,18 +5,22 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DayCardComponent } from './day-card/day-card.component';
-import { DayPersonComponent } from './day-person/day-person.component';
 import { CalenderCardComponent } from './calender-card/calender-card.component';
+import { MatCardModule, MatGridListModule, MatInputModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DayCardComponent,
-    DayPersonComponent,
     CalenderCardComponent
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
+    MatGridListModule,
+    MatInputModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatModulesModule
   ],

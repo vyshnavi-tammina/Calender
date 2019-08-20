@@ -1,3 +1,10 @@
-<p>
-  day-card works!
-</p>
+<mat-card>
+  <mat-card-header>
+    {{title}}
+  </mat-card-header>
+  <mat-grid-list cols="2">
+    <mat-grid-tile *ngFor="let data of dayData">
+      <span *ngFor="let name of data.name.split(' ')">{{name[0]}}</span>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

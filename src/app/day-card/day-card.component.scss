@@ -1,0 +1,16 @@
+mat-grid-tile {
+background-color: mediumturquoise;
+  >span {
+    color:pink;
+  }
+}
+mat-card{
+  width: 128px;
+  height: 172px;
+  padding: 0px;
+}
+mat-card-header{
+  background-color: #aba0ec;
+  height: 38px;
+  align-items: center;
+}

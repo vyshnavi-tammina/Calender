@@ -1,3 +1,5 @@
-<p>
-  calender-card works!
-</p>
+<mat-card>
+  <div *ngFor="let item of array">
+    <app-day-card [title]="days[item]" [dayData]="matchedData[item]"></app-day-card>
+  </div>
+</mat-card>
