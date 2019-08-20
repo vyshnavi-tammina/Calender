@@ -97,11 +97,12 @@ export class AppComponent {
     {
       name: 'Viserys Targaryen',
       birthday: '12/06/1984'
-    },
+    }
   ];
   dataString = JSON.stringify(this.data, undefined, 4);
+  yearChange = this.year;
   dataChanged() {
+    this.year = this.yearChange;
     this.data = JSON.parse(this.dataString);
-    console.log('data', this.data, this.dataString)
   }
 }

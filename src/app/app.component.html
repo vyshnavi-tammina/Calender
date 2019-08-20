@@ -1,13 +1,21 @@
-<div class="full-row">
-  <app-calender-card [calenderData]="data" [year]="year"></app-calender-card>
-</div>
+<div class="parent-div">
+  <div class="full-row">
+    <app-calender-card [calenderData]="data" [year]="year"></app-calender-card>
+  </div>
 
-<div class="half-row">
-  <textarea [(ngModel)]="dataString" (keyup)="dataChanged()" rows="20" cols="40"></textarea>
-</div>
+  <div class="half-row">
+      <h4>Birthdays Json data to display</h4>
+      <mat-divider></mat-divider>
+    <textarea placeholder="Birthdays Json data to display" [(ngModel)]="dataString" rows="20" cols="50"></textarea>
+  </div>
 
-<div class="half-row">
-  <mat-form-field>
-    <input matInput placeholder="year of birthdays to display" [(ngModel)]="year" number>
-  </mat-form-field>
+  <div class="half-row">
+    <mat-form-field>
+        <h4>Year of birthdays to display</h4>
+
+      <input matInput  [(ngModel)]="yearChange" number>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" (click)="dataChanged()">Update</button>
+  </div>
 </div>

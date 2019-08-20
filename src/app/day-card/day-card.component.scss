@@ -9,18 +9,23 @@ mat-card{
   height: 158px;
   padding: 0px;
   border: 1px solid #ccd1d3;
+  border-radius: 5%;
 }
 mat-card-header{
   background-color: #aba0ec;
   height: 38px;
   align-items: center;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 .empty{
   color:#9ca7ae;
   background-color:#dee4e6;
   text-align: center;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
   &:after{
   content: "\02368";
-  font-size: 100px;
+  font-size: 98px;
   }
 }
