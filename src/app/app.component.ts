@@ -93,10 +93,11 @@ export class AppComponent {
     }, {
       name: 'Daario Naharis',
       birthday: '12/02/1985'
-    }, {
+    },
+    {
       name: 'Viserys Targaryen',
       birthday: '12/06/1984'
-    }
+    },
   ];
   dataString = JSON.stringify(this.data, undefined, 4);
   dataChanged() {

@@ -1,5 +1,6 @@
-<mat-card>
+<div class="outer-div">
   <div *ngFor="let item of array">
-    <app-day-card [title]="days[item]" [dayData]="matchedData[item]"></app-day-card>
+    <app-day-card [title]="days[item]" [dayData]="matchedData[item]" [colsCalculation]="colsCalculationData[item]">
+    </app-day-card>
   </div>
-</mat-card>
+</div>

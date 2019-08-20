@@ -2,9 +2,10 @@
   <mat-card-header>
     {{title}}
   </mat-card-header>
-  <mat-grid-list cols="2">
+  <mat-grid-list [cols]="colsCalculation>1&&colsCalculation<=4?2:colsCalculation<=8?3:colsCalculation<=12?4:1" *ngIf="dayData.length">
     <mat-grid-tile *ngFor="let data of dayData">
       <span *ngFor="let name of data.name.split(' ')">{{name[0]}}</span>
     </mat-grid-tile>
   </mat-grid-list>
+  <div class="empty" *ngIf="!dayData.length"></div>
 </mat-card>
