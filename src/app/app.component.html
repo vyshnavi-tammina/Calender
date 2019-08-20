@@ -4,16 +4,16 @@
   </div>
 
   <div class="half-row">
-      <h4>Birthdays Json data to display</h4>
-      <mat-divider></mat-divider>
+    <h4>Birthdays Json data to display</h4>
+    <mat-divider></mat-divider>
     <textarea placeholder="Birthdays Json data to display" [(ngModel)]="dataString" rows="20" cols="50"></textarea>
   </div>
 
   <div class="half-row">
+    <h4>Year of birthdays to display</h4>
+    <mat-divider></mat-divider>
     <mat-form-field>
-        <h4>Year of birthdays to display</h4>
-
-      <input matInput  [(ngModel)]="yearChange" number>
+      <input matInput [(ngModel)]="yearChange" number>
     </mat-form-field>
     <br>
     <button mat-raised-button color="primary" (click)="dataChanged()">Update</button>
