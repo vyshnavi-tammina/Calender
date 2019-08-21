@@ -1,13 +1,12 @@
-.full-row{
-  width: 80%;
-}
-.half-row{
-  margin-top:20px;
-  width:40%;
-  float: left;
-}
-.parent-div{
+div.parent-div {
   width:100%;
   text-align: center;
+  >div.full-row {
+    width: 80%;
+  }
+  >div.half-row {
+    margin-top:20px;
+    width:40%;
+    float: left;
+  }
 }
-
