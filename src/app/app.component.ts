@@ -26,7 +26,7 @@ export class AppComponent {
       birthday: '12/03/1989'
     }, {
       name: 'Sansa Stark',
-      birthday: '15/08/1992'
+      birthday: '05/08/1992'
     }, {
       name: 'Jorah Mormont',
       birthday: '12/16/1968'

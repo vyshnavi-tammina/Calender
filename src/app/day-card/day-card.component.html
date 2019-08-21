@@ -3,7 +3,7 @@
     <mat-card-header>
       {{title}}
     </mat-card-header>
-    <mat-grid-list [cols]="colsCalculation>1&&colsCalculation<=4?2:colsCalculation<=8?3:colsCalculation>8?4:1"
+    <mat-grid-list [cols]="(colsCalculation>1&&colsCalculation<=4)?2:(colsCalculation>=4&&colsCalculation<=8)?3:(colsCalculation>8)?4:1"
       *ngIf="dayData.length">
       <mat-grid-tile *ngFor="let data of dayData;let inx=index" [ngStyle]="!(inx<16)?{'display':'none','background': data.color}:
       {'display':'block','background': data.color}">
